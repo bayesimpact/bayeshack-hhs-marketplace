@@ -15,8 +15,21 @@ But computer- and engineer-accessibility doesn't make it particularly accessible
 
 * `data/download.sh` - A shell script to dowload CMS data:
 
-    Run `source data/download.sh year` to download all datasets for year=`year`. For example run `source data/download.sh 2016` to download 2016 data, if you want to run the sample analysis notebook.
+    _for Mac only_:
+
+    Run `source data/download.sh year` to download and unzip all datasets for year=`year`. 
+
+    For example run `source data/download.sh 2016` to download 2016 data, if you want to run the sample analysis notebook. To download the entire dataset, run `source data/download.sh 2014 2015 2016`.
+
+    _for non-Mac_:
+
+    You can download the files manually from [here](https://www.cms.gov/CCIIO/Resources/Data-Resources/marketplace-puf.html).
+
 * `analysis/` - iPyton notebook files (which you can view right here on GitHub) loading the data and exploring a few things. Good to understand the datasets and get ideas for your project. _If_ you want to run this notebook, run `pip install -r requirements.txt` inside a virtualenv first.
+
+
+##Available data formats:
+Prior to 2016, the marketplace datasets are available in simple CSV formats. However, since November 2015, insurance issuers are required to submit and maintain their plans in a machine-readable (MR) format. Therefore, for 2016, the health insurance marketplace PUF data is available in two formats: CSV and JSON. To learn more about these JSON file structures look at [this](https://github.com/CMSgov/QHP-provider-formulary-APIs) github repo. [This spreadsheet](http://download.cms.gov/marketplace-puf/2016/machine-readable-url-puf.zip) contains URL to access all the JSON formated files for each insurance issuer.
 
 ##Other Resources
 * [The CMS Health Insurance Marketplace Public Use Files](https://www.cms.gov/CCIIO/Resources/Data-Resources/marketplace-puf.html), this prompt's core dataset. The 2016 part of this dataset is available in /data folder.
