@@ -6,7 +6,13 @@ do
     cd data/$year
     for fname in ${files[@]}
     do
-        wget "http://download.cms.gov/marketplace-puf/$year/$fname"
+        if [ "$year" == "2015" ]; then
+            download_path="http://download.cms.gov/marketplace-puf/$fname"
+        else
+            download_path="http://download.cms.gov/marketplace-puf/$year/$fname"
+        fi
+        echo $download_path
+        curl -o $fname $download_path
         unzip $fname
         rm $fname
     done
