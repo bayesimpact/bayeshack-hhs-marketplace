@@ -25,6 +25,8 @@ But computer- and engineer-accessibility doesn't make it particularly accessible
 
     You can download the files manually from [here](https://www.cms.gov/CCIIO/Resources/Data-Resources/marketplace-puf.html).
 
+    Also, look at [this github repo](https://github.com/benhamner/health-insurance-marketplace), for an awesome Makefile that creates a SQLite database from the raw data. 
+
 * `analysis/` - iPyton notebook files (which you can view right here on GitHub) loading the data and exploring a few things. Good to understand the datasets and get ideas for your project. _If_ you want to run this notebook, run `pip install -r requirements.txt` inside a virtualenv first.
 
 
