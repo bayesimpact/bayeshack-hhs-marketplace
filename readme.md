@@ -11,6 +11,9 @@ In November 2015, the Centers for Medicare & Medicaid Services (CMS) enacted a n
 
 But computer- and engineer-accessibility doesn't make it particularly accessible to the general market of health care consumers. The new challenge, then, is to transform this vast directory of provider data into insights that can guide individuals to the health care they're paying for, that they deserve, and that they often badly need.
 
+
+__David Portnoy__ of HHS has created [this](http://ddod.healthdata.gov/wiki/Challenge:_How_can_data_connect_individuals_with_the_health_providers_they_need) challenge page for Bayes Hack. It has all you need to get started. 
+
 ## In this Repo
 
 * `data/download.sh` - A shell script to dowload CMS data:
